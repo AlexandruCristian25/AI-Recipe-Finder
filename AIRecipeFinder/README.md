@@ -12,10 +12,6 @@ AI-powered mobile app built with React Native and TypeScript that helps you disc
 - 📦 Modular, scalable structure
 - 🧪 Unit tested with Jest
 
-## 📸 Screenshots
-
-*(Add your own screenshots or GIFs)*
-
 ## 🚀 Getting Started
 
 ```bash
