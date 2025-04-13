@@ -1,114 +1,55 @@
-# 🍳 AI Recipe Finder
+# AIRecipeFinder 🍳
 
-AI-powered mobile app built with React Native and TypeScript that helps you discover cooking recipes by simply describing what you're in the mood to eat.
+O aplicație React care generează rețete culinare folosind OpenAI GPT și permite salvarea lor ca favorite. Este stilizată modern cu TailwindCSS și are funcționalități de filtrare, regenerare și gestionare a preferatelor.
 
-## 🔥 Features
+## 🔧 Tehnologii folosite
 
-- ✨ AI-generated recipes using OpenAI
-- 📱 Built with React Native + Expo
-- 🌗 Dark mode support
-- ❤️ Save and persist favorite recipes
-- ⚡ Animations and visual feedback
-- 📦 Modular, scalable structure
-- 🧪 Unit tested with Jest
-
-## 🚀 Getting Started
-
-```bash
-npm install
-npx expo start
-```
-
-## 🧠 Technologies
-
-- React Native + Expo
-- TypeScript
-- Nativewind (Tailwind for RN)
+- React + Vite
+- TailwindCSS
 - OpenAI API
-- AsyncStorage
-- Jest
+- Local Storage
 
-## ✅ Folder Structure
+---
 
-```
-.
-├── components/      # UI components
-├── hooks/           # Custom hooks
-├── services/        # API calls and helpers
-├── screens/         # App screens
-├── types/           # TypeScript types
-├── __tests__/       # Unit tests
-```
+## ▶️ Pași pentru rulare
 
-## 🧪 Testing
+1. **Descarcă și dezarhivează arhiva**:
+   ```bash
+   unzip AIRecipeFinder_Final_Full_Updated.zip
+   cd AIRecipeFinder_Final_Full
+   ```
 
-```bash
-npm run test
-```
+2. **Instalează dependențele**:
+   ```bash
+   npm install
+   ```
 
+3. **Creează fișierul `.env`** în rădăcina proiectului și adaugă:
+   ```env
+   VITE_OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+   ```
 
+4. **Pornește aplicația**:
+   ```bash
+   npm run dev
+   ```
 
-✅ AI Recipe Finder
-1. 🧠 App Purpose
+5. Accesează în browser: [http://localhost:5173](http://localhost:5173)
 
-    "I built an AI-powered mobile app that generates recipes based on what the user feels like eating, using OpenAI for recipe generation. The app is mobile-first, developed in React Native with TypeScript."
+---
 
-2. ⚙️ Tech Stack
+## 💡 Funcționalități
 
-    React Native (Expo)
+- 🔍 Filtrare rețete după titlu
+- 🧠 Generare rețetă folosind GPT
+- ❤️ Adăugare/ștergere din favorite
+- 🔁 Regenerare rețete
+- 🌙 Interfață responsive & elegantă
 
-    TypeScript for safety and scalability
+---
 
-    OpenAI API for recipe generation
+## 📂 Structură foldere
 
-    Nativewind (Tailwind for React Native)
-
-    AsyncStorage to persist favorite recipes
-
-    Jest for unit testing (ready to scale)
-
-3. 🌗 Key Features
-
-    User input like: “I want something spicy with chicken”
-
-    Instant AI-generated recipe list
-
-    Full details: ingredients + cooking steps
-
-    Add to Favorites with persistence
-
-    Integrated Dark Mode toggle
-
-    Visual feedback and smooth animations
-
-4. 🧱 Architecture & Structure
-
-    "The codebase is modular and scalable, organized into: components/, hooks/, services/, types/, screens/, and __tests__/ for easy onboarding and maintainability."
-
-5. 🚀 User Experience
-
-    UI inspired by a professional design
-
-    Responsive and mobile-friendly
-
-    Clear and intuitive navigation
-
-    Theme switching (Light/Dark)
-
-    Local persistence of favorites
-
-6. 🧪 Testing & Quality
-
-    "I added a base setup for unit testing using Jest and structured the project to allow scalable testing in the future."
-
-7. 🧭 Potential Future Improvements
-
-    Login with Google / Apple account
-
-    Cloud storage for favorites (Firebase / Supabase)
-
-    Offline mode support
-
-    AI image generation (e.g. with DALL·E)
-
-Made with ❤️ for this job applications. Hope you enjoy it!
+- `src/components`: componente UI (RecipeCard, FilterBar etc.)
+- `src/pages`: pagina principală `Home.jsx`
+- `src/utils`: funcții ajutătoare
